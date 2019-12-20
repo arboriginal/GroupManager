@@ -13,3 +13,15 @@ The repository I forked presents it like this:
 I was using a [fork of GroupManager](https://www.spigotmc.org/resources/groupmanager.38875/) without having time to check deeper, until a new release which was compiled with Java 11. As you can see reading for [Which versions of Java do you regularly use?](https://www.jetbrains.com/lp/devecosystem-2019/java/), [Which Version of Java Should You Use?](https://www.stackchief.com/blog/Which%20Version%20of%20Java%20Should%20You%20Use%3F) for example, the fact Spigot was still built with Java 8 and lots of Minecraft server hosting companies still use it, I created a fork to give the author my modified version of Maven's pom.xml file which will support Java 8 ([see here](https://www.spigotmc.org/threads/groupmanager.230254/page-5#post-3632641)). Then putting my eyes on the code, I've decided to use my own version instead of this one.
 
 Moreover, even if some people are saying GroupManager is buggy, outdated, etc. I'm using it since 2012 without issues and except telling me "because X told it", those detractors never gave me a real reason to switch to another one permissions plugin... Creating my own version will give me the opportunity to study the code and make my own opinion.
+
+# How to install
+
+1. Download the last version from the [releases tab](https://github.com/arboriginal/GroupManager/releases)
+2. Put the jar file you got into your plugins folder
+3. Start your server
+
+Default config file will be generated for you into the plugins/GroupManager folder.
+
+# How to use (commands, permissions, ...)
+
+I'll maybe write detailled guide later, for now visit the old plugin wiki: http://ess.khhq.net/wiki/Group_Manager
