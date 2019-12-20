@@ -1,14 +1,15 @@
-name: GroupManager
-version: 0.3.0
-api-version: 1.15
-main: org.anjocaido.groupmanager.GroupManager
+name: ${project.name}
+description: ${project.description}
+version: ${project.version}
+
+author: arboriginal
+contributors: [ AnjoCaido, Gabriel Couto, ElgarL, Xadzkon ]
+dev-url: https://github.com/arboriginal/${project.artifactId}
 website: http://ess.khhq.net/wiki/Group_Manager
-description: Provides on-the-fly system for permissions system created by Nijikokun. But all in memory, and with flat-file saving schedule.
-authors:
-  - AnjoCaido
-  - Gabriel Couto
-  - ElgarL
-  - Xadzkon
+
+main: ${project.groupId}.${project.artifactId}
+api-version: ${spigot-api}
+
 commands:
   manuadd:
     description: Moves a player to desired group (Adds to the file if does not exist).
@@ -179,7 +180,7 @@ commands:
     description: Obtains the path to each file a world is storing its data in (users/groups).
     usage: /<command> <world>
     permissions: groupmanager.mancheckw
-    
+
 Permissions:
     groupmanager.op:
         description: User is treated as an op when using the GroupManager commands.
